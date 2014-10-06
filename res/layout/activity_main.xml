@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ListView
+        android1:id="@+id/listView1"
+        android1:layout_width="match_parent"
+        android1:layout_height="222dp"
+        android1:layout_weight="0.14" >
+
+    </ListView>
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="54dp" >
+
+        <TextView
+            android1:id="@+id/textView2"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="0000 м"
+            android1:textSize="28sp" />
+
+        <Button
+            android1:id="@+id/buttonRefresh"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:onClick="onClickLoad"
+            android1:text="Обновить" />
+
+        <Button
+            android1:id="@+id/buttonGo"
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:onClick="onClickFind"
+            android1:text="Поиск точки" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content" >
+
+        <TextView
+            android1:id="@+id/textViewMast"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Мастер:   " />
+
+        <TextView
+            android1:id="@+id/textViewLat"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Широта   " />
+
+        <TextView
+            android1:id="@+id/textViewLon"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Долгота    " />
+
+        <CheckBox
+            android1:id="@+id/checkBox1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Интернет" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="46dp"
+        android1:layout_weight="0.19"
+        android1:orientation="horizontal" >
+
+        <ImageView
+            android1:id="@+id/imageView1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="match_parent"
+            android1:src="@drawable/plakat2" />
+
+        <ImageView
+            android1:id="@+id/imageView2"
+            android1:layout_width="wrap_content"
+            android1:layout_height="match_parent"
+            android1:src="@drawable/plakat2" />
+       
+    </LinearLayout>
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:text="(с) 2014 ОММ МАДИ ГТУ, Волков М.М," />
+
+</LinearLayout>
